@@ -1,13 +1,13 @@
-
-
-
-
 # Assignment -05 [contact application]
 
 ### Name : Albena
 
-### Email: 
-[ Live url]
+### Email:
+
+- Live url of backend deploy in render https://json-server-rza8.onrender.com
+- Live url of frontend deploy in netlify https://contact-app-celadon-hotteok-788e21.netlify.app/
+- Live url of backend github https://github.com/Albena09/json-server.git
+- Live url of frontend github https://github.com/Albena09/contact-app.git
 
 ## Features
 
@@ -30,7 +30,6 @@
 - **axios**
 - **uuid**
 - **json-server**
-
 
 ---
 
