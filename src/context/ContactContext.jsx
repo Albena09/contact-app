@@ -8,7 +8,8 @@ import axios from "axios";
 export const ContactContext = createContext();
 
 // URL of the backend API
-const API_URL = "http://localhost:9000/contacts";
+// const API_URL = "http://localhost:9000/contacts";
+const API_URL = import.meta.env.VITE_API_BASE_URL;
 
 // Context Provider component
 
@@ -25,12 +26,13 @@ export const ContactProvider = ({ children }) => {
   const fetchContacts = async () => {
     try {
       // Send GET request to the API
-      const res = await axios.get(API_URL);
+      const res = await axios.get(`${API_URL}/contacts`);
       setContacts(res.data); // Store the response data in state
     } catch (error) {
       console.error("Error fetching contacts:", error);
     }
   };
+
   // Function to add a new contact
   const addContact = async (contact) => {
     try {
